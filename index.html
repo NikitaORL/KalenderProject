@@ -3,58 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MS Project</title>
+    <title>Kalendri loomine Microsoft Projectis</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Microsoft Project (MS Project)</h1>
-    </header>
+<header>
+    <h1>📅 Uue kalendri loomine Microsoft Projectis</h1>
+    <p>Samm-sammult juhend koos seletuste ja ekraanipiltidega</p>
+</header>
 
-    <nav>
-        <button onclick="showSection('overview')">Ülevaade</button>
-        <button onclick="showSection('features')">Funktsioonid</button>
-        <button onclick="showSection('benefits')">Eelised</button>
-    </nav>
+<nav>
+    <button onclick="showSection('create')">Loo kalender</button>
+    <button onclick="showSection('edit')">Tööaja muutmine</button>
+    <button onclick="showSection('usage')">Kalendri kasutamine</button>
+</nav>
 
-    <main>
-        <section id="overview" class="active">
-            <h2>Ülevaade</h2>
-            <p>MS Project on projektijuhtimise tööriist, mis aitab planeerida ülesandeid, hallata ressursse ja jälgida projekti edenemist. Seda kasutatakse äris, IT-s ja ehituses.</p>
-        </section>
+<main>
+    <!-- 1. Kalender loomine -->
+    <section id="create" class="active">
+        <h2>1. Uue kalendri loomine</h2>
+        <p>Kalendri loomiseks:</p>
+        <ol>
+            <li>Ava Microsoft Project.</li>
+            <li>Vali <strong>Project → Change Working Time</strong>.</li>
+            <li>Klõpsa <strong>Create New Calendar</strong>.</li>
+            <li>Anna kalendrile nimi</li>
+        </ol>
+        <img src="Image/create.png" alt="Kalendri loomine" class="screenshot">
+    </section>
 
-        <section id="features">
-            <h2>Funktsioonid</h2>
+    <!-- 2. Tööaja muutmine -->
+    <section id="edit">
+        <h2>2. Tööaja muutmine</h2>
+        <p>Kalendri tööaja muutmiseks:</p>
+        <ol>
+            <li>Vali kalender ja klõpsa <strong>Details</strong>.</li>
+            <img src="Image/Edit.png" alt="Tööaja muutmine" class="screenshot">
+            <li>Määra tööajad nädalapäevade kaupa.</li>
+            <img src="Image/Edit2.png" alt="Tööaja seadistamine" class="screenshot">
+            <li>Lisa eripäevad (näiteks pühad)</li>
+            <img src="Image/editDays.png" alt="Eripäevade lisamine" class="screenshot">
+        </ol>
+    </section>
+
+    <!-- 3. Kalendri kasutamine -->
+    <section id="usage">
+        <h2>3. Kalendri kasutamine</h2>
+        <p>Kalendri rakendamiseks ülesandele:</p>
+        <ol>
+            <li>Topeltklõps ülesandel.</li>
+            <li>Väljal <strong>Calendar</strong> vali loodud kalender.</li>
+            <img src="Image/Use.png" alt="Kalendri rakendamine" class="screenshot">
+            <li>Projekt võtab arvesse töö- ja puhkepäevi.</li>
+            <img src="Image/Result.png" alt="Kalendri kasutamine" class="screenshot">
+            <li>Tööaeg oli järgmine:</li>
+            <img src="Image/check.png" alt="Tööaja kontroll" class="screenshot">
+
+            <!-- Kalendri mõju ajakavale -->
+            <h3>Kalendri mõju ajakavale</h3>
+            <p>
+                Uus kalender mõjutab otseselt ülesannete tähtaegu ja projekti graafikut.
+                See arvestab:
+            </p>
             <ul>
-                <li>Ganta diagrammide loomine</li>
-                <li>Ülesannete ja tähtaegade haldamine</li>
-                <li>Ressursside määramine</li>
-                <li>Projekti edenemise jälgimine</li>
-                <li>Aruannete ja analüütika genereerimine</li>
+                <li>Töö- ja puhkepäevi (näiteks nädalavahetused ja pühad).</li>
+                <li>Tööaega iga päeva kohta (nt 8:00–17:00).</li>
+                <li>Erandeid, näiteks puhkused või ärireisid.</li>
             </ul>
-        </section>
+            <p>
+                Kalendri muutmisel arvutab Project automaatselt ülesannete algus- ja lõppkuupäevad,
+                uuendab Gantti diagramme ja hoiab projekti ajakava täpse.
+            </p>
+    </section>
+</main>
 
-        <section id="benefits">
-            <h2>Eelised</h2>
-            <ul>
-                <li>Projekti juhtimise tõhususe suurendamine</li>
-                <li>Tähtaegade ja ressursside parem kontroll</li>
-                <li>Protsesside läbipaistvus meeskonna ja juhtkonna jaoks</li>
-                <li>Viivituste ja vigade riski vähendamine</li>
-            </ul>
-        </section>
-    </main>
+<footer>
+    &copy; Nikita Orlenko 2026 Microsoft Project juhend
+</footer>
 
-    <footer>
-        &copy; 2026 MS Project Info
-    </footer>
-
-    <script>
-        function showSection(id) {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(sec => sec.classList.remove('active'));
-            document.getElementById(id).classList.add('active');
-        }
-    </script>
+<script>
+    // Sektsioonide vahetamise funktsioon
+    function showSection(id) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(sec => sec.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+    }
+</script>
 </body>
 </html>

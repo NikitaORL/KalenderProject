@@ -1,32 +1,47 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f4f6f8;
+    color: #333;
 }
 
 header {
-    background-color: #0078d7;
+    background: linear-gradient(to right, #0078d7, #005a9e);
     color: white;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    opacity: 0.9;
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
     background-color: #e0e0e0;
-    padding: 10px;
-    text-align: center;
 }
 
 nav button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-weight: bold;
     background-color: #0078d7;
     color: white;
     border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
+    transition: 0.3s;
 }
 
 nav button:hover {
@@ -34,24 +49,56 @@ nav button:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 25px;
+    max-width: 900px;
+    margin: auto;
 }
 
 section {
     display: none;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 section.active {
     display: block;
 }
 
+section h2 {
+    font-size: 1.8rem;
+    color: #0078d7;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0078d7;
+    padding-bottom: 5px;
+}
+
+section h3 {
+    font-size: 1.4rem;
+    color: #005a9e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ol, ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.screenshot {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 footer {
     background-color: #0078d7;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
+    padding: 12px 20px;
+    position: relative;
     bottom: 0;
+    margin-top: 30px;
+    font-weight: bold;
 }
