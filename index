@@ -4,72 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MS Project</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        header {
-            background-color: #0078d7;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #e0e0e0;
-            padding: 10px;
-            text-align: center;
-        }
-        nav button {
-            margin: 0 10px;
-            padding: 10px 20px;
-            font-weight: bold;
-            background-color: #0078d7;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        nav button:hover {
-            background-color: #005a9e;
-        }
-        main {
-            padding: 20px;
-        }
-        section {
-            display: none;
-            margin-bottom: 20px;
-        }
-        section.active {
-            display: block;
-        }
-        footer {
-            background-color: #0078d7;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Microsoft Project (MS Project)</h1>
     </header>
+
     <nav>
         <button onclick="showSection('overview')">Ülevaade</button>
         <button onclick="showSection('features')">Funktsioonid</button>
         <button onclick="showSection('benefits')">Eelised</button>
     </nav>
+
     <main>
         <section id="overview" class="active">
             <h2>Ülevaade</h2>
             <p>MS Project on projektijuhtimise tööriist, mis aitab planeerida ülesandeid, hallata ressursse ja jälgida projekti edenemist. Seda kasutatakse äris, IT-s ja ehituses.</p>
         </section>
+
         <section id="features">
             <h2>Funktsioonid</h2>
             <ul>
@@ -80,6 +33,7 @@
                 <li>Aruannete ja analüütika genereerimine</li>
             </ul>
         </section>
+
         <section id="benefits">
             <h2>Eelised</h2>
             <ul>
@@ -90,6 +44,7 @@
             </ul>
         </section>
     </main>
+
     <footer>
         &copy; 2026 MS Project Info
     </footer>
