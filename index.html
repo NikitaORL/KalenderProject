@@ -7,87 +7,83 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
     <h1>📅 Uue kalendri loomine Microsoft Projectis</h1>
     <p>Samm-sammult juhend koos seletuste ja ekraanipiltidega</p>
 </header>
 
 <nav>
-    <button onclick="showSection('create')">Loo kalender</button>
-    <button onclick="showSection('edit')">Tööaja muutmine</button>
-    <button onclick="showSection('usage')">Kalendri kasutamine</button>
+    <!-- Dropdown для календаря -->
+    <div class="dropdown">
+        <button class="dropbtn">Kalender ▼</button>
+        <div class="dropdown-content">
+            <a href="#" onclick="showSection('create')">Loo kalender</a>
+            <a href="#" onclick="showSection('edit')">Tööaja muutmine</a>
+            <a href="#" onclick="showSection('usage')">Kalendri kasutamine</a>
+        </div>
+    </div>
+
+    <!-- Отдельная кнопка Formula -->
+    <a href="formula.html" class="nav-link formula-btn">Formula</a>
 </nav>
 
 <main>
-    <!-- 1. Kalender loomine -->
     <section id="create" class="active">
         <h2>1. Uue kalendri loomine</h2>
-        <p>Kalendri loomiseks:</p>
         <ol>
             <li>Ava Microsoft Project.</li>
             <li>Vali <strong>Project → Change Working Time</strong>.</li>
             <li>Klõpsa <strong>Create New Calendar</strong>.</li>
             <li>Anna kalendrile nimi</li>
         </ol>
-        <img src="Image/create.png" alt="Kalendri loomine" class="screenshot">
+        <img src="Image/create.png" class="screenshot">
     </section>
 
-    <!-- 2. Tööaja muutmine -->
     <section id="edit">
         <h2>2. Tööaja muutmine</h2>
-        <p>Kalendri tööaja muutmiseks:</p>
         <ol>
             <li>Vali kalender ja klõpsa <strong>Details</strong>.</li>
-            <img src="Image/Edit.png" alt="Tööaja muutmine" class="screenshot">
+            <img src="Image/Edit.png" class="screenshot">
             <li>Määra tööajad nädalapäevade kaupa.</li>
-            <img src="Image/Edit2.png" alt="Tööaja seadistamine" class="screenshot">
-            <li>Lisa eripäevad (näiteks pühad)</li>
-            <img src="Image/editDays.png" alt="Eripäevade lisamine" class="screenshot">
+            <img src="Image/Edit2.png" class="screenshot">
+            <li>Lisa eripäevad</li>
+            <img src="Image/editDays.png" class="screenshot">
         </ol>
     </section>
 
-    <!-- 3. Kalendri kasutamine -->
     <section id="usage">
         <h2>3. Kalendri kasutamine</h2>
-        <p>Kalendri rakendamiseks ülesandele:</p>
         <ol>
             <li>Topeltklõps ülesandel.</li>
-            <li>Väljal <strong>Calendar</strong> vali loodud kalender.</li>
-            <img src="Image/Use.png" alt="Kalendri rakendamine" class="screenshot">
-            <li>Projekt võtab arvesse töö- ja puhkepäevi.</li>
-            <img src="Image/Result.png" alt="Kalendri kasutamine" class="screenshot">
-            <li>Tööaeg oli järgmine:</li>
-            <img src="Image/check.png" alt="Tööaja kontroll" class="screenshot">
+            <li>Vali kalender</li>
+            <img src="Image/Use.png" class="screenshot">
+            <li>Projekt arvestab tööaega</li>
+            <img src="Image/Result.png" class="screenshot">
+            <li>Tööaja kontroll</li>
+            <img src="Image/check.png" class="screenshot">
+        </ol>
 
-            <!-- Kalendri mõju ajakavale -->
-            <h3>Kalendri mõju ajakavale</h3>
-            <p>
-                Uus kalender mõjutab otseselt ülesannete tähtaegu ja projekti graafikut.
-                See arvestab:
-            </p>
-            <ul>
-                <li>Töö- ja puhkepäevi (näiteks nädalavahetused ja pühad).</li>
-                <li>Tööaega iga päeva kohta (nt 8:00–17:00).</li>
-                <li>Erandeid, näiteks puhkused või ärireisid.</li>
-            </ul>
-            <p>
-                Kalendri muutmisel arvutab Project automaatselt ülesannete algus- ja lõppkuupäevad,
-                uuendab Gantti diagramme ja hoiab projekti ajakava täpse.
-            </p>
+        <h3>Kalendri mõju ajakavale</h3>
+        <ul>
+            <li>Töö- ja puhkepäevad</li>
+            <li>Tööaeg</li>
+            <li>Erandid</li>
+        </ul>
     </section>
 </main>
 
 <footer>
-    &copy; Nikita Orlenko 2026 Microsoft Project juhend
+    &copy; Nikita Orlenko 2026
 </footer>
 
 <script>
-    // Sektsioonide vahetamise funktsioon
     function showSection(id) {
         const sections = document.querySelectorAll('section');
         sections.forEach(sec => sec.classList.remove('active'));
         document.getElementById(id).classList.add('active');
     }
 </script>
+
 </body>
 </html>
