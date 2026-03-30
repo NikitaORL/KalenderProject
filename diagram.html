@@ -3,51 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagraamide loomine MS Projectis</title>
+    <title>Diagrammid ProjectLibres</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>📊 Diagraamide loomine Microsoft Projectis</h1>
-    <p>Juhend samm-sammult koos ekraanipiltidega</p>
+    <h1>📊 Diagrammid ProjectLibres</h1>
+    <p>Õpi, kuidas luua diagramme ja jälgida ülesandeid ning ressursse projektis.</p>
 </header>
 
 <nav>
     <a href="index.html" class="nav-link">Kalender</a>
-    <a href="formula.html" class="nav-link">Formula</a>
-    <a href="diagram.html" class="nav-link formula-btn">Diagrammid</a>
+    <a href="diagram.html" class="nav-link" style="background-color: #005a9e;">Diagrammid</a>
 </nav>
 
 <main>
-    <section id="diagram" class="active">
-        <h2>1. Andmete valimine diagrammi jaoks</h2>
-        <p>Diagrammi loomiseks tuleb esmalt valida tabelis vajalikud väljad. Minu näites valin hinnaväljad (prices), et saada kulude diagramm.</p>
-        <img src="Image/img.png" class="screenshot" alt="Andmete valimine tabelis">
+    <div class="content-wrapper">
 
-        <h2>2. Tabeli loomine</h2>
-        <p>Järgmiseks vajutan nuppu <strong>Tables</strong> ja valin sealt <strong>Cost</strong>, et saada kulude tabel.</p>
-        <img src="Image/img_1.png" class="screenshot" alt="Tables nupp ja Cost valik">
+        <h2>Diagrammitüübid ProjectLibres</h2>
+        <ul>
+            <li><strong>Gantt Chart (Gantti diagramm)</strong> – näitab ülesannete kestust ja nende sõltuvusi ajaskaalal.</li>
+            <li><strong>Network Diagram (Võrgustiku diagramm)</strong> – kuvab ülesandeid ja nende järjekorda nooledega, kasulik kriitilise tee jälgimiseks.</li>
+            <li><strong>Resource Usage / Resource Sheet (Ressursside tabelid)</strong> – tabelid, mis näitavad ressursside (inimesed, seadmed) jaotust. Otse graafikuid ei kuvata.</li>
+        </ul>
 
-        <p>Tulemuseks saame kulude tabeli:</p>
-        <img src="Image/img_2.png" class="screenshot" alt="Kulude tabel">
+        <h2>1. Gantt Chart loomine</h2>
+        <ol>
+            <li>Avage ProjectLibre ja looge uus projekt (<strong>File → New</strong>).</li>
+            <li>Lisage ülesanded: <strong>Task Name</strong> ja <strong>Duration</strong> (näiteks 5d).</li>
+        </ol>
+        <img src="Image2/table.png" class="screenshot" alt="Ülesannete lisamine">
 
-        <div class="info-box">
-            <strong>✅ Kontroll!</strong> Enne edasi liikumist veendu, et tabelis pole vigu.
-        </div>
+        <ol start="3">
+            <li>Määrake sõltuvused: <strong>Predecessors</strong> veerg või <strong>Link Tasks</strong> nupp.</li>
+            <li>Diagramm kuvatakse automaatselt paremal (<strong>Gantt Chart</strong>).</li>
+        </ol>
+        <img src="Image2/gant.png" class="screenshot" alt="Gantt Chart näide">
 
-        <h2>3. Diagrammi loomine</h2>
-        <p>Kui kõik on korras, liigume diagrammi loomise juurde. Mine menüüsse <strong>Report → Dashboard</strong> ja vali sobiv diagramm. Minu näites valin <strong>Cost Overview</strong>.</p>
-        <img src="Image/img_3.png" class="screenshot" alt="Report → Dashboard → Cost Overview">
+        <h2>2. Network Diagram loomine</h2>
+        <ol>
+            <li>Valige menüüst <strong>View → Network Diagram</strong>.</li>
+            <li>Diagrammil kuvatakse ülesanded plokkidena ja sõltuvused nooledega.</li>
+            <li>Kasutatakse ülesannete järjestuse ja kriitilise tee jälgimiseks.</li>
+        </ol>
+        <img src="Image2/network.png" class="screenshot" alt="Network Diagram näide">
 
-        <h2>4. Lõpptulemus</h2>
-        <p>Valiku järel avaneb kulude ülevaate diagramm:</p>
-        <img src="Image/img_4.png" class="screenshot" alt="Kulude diagramm">
+        <h2>3. Ressursside jälgimine</h2>
+        <ol>
+            <li>Menüü <strong>View → Resource Sheet</strong> – ressursside tabel.</li>
+            <li>Menüü <strong>View → Resource Usage</strong> – tabel, kus näete, milliseid ressursse ülesanded kasutavad.</li>
+            <li>Otse graafikuid ProjectLibre ei loo; graafikud saab teha, eksportides andmed Excelisse.</li>
+        </ol>
+        <img src="Image2/resourse.png" class="screenshot" alt="Resource Usage näide">
 
-        <div class="tip-box">
-            💡 <strong>Vihje:</strong> Diagrammi saab edasi kohandada – lisada pealkirju, muuta värve või filtrida andmeid vastavalt vajadusele.
-        </div>
-    </section>
+        <h2>Kokkuvõte</h2>
+        <p>
+            ProjectLibre võimaldab visualiseerida ülesannete ajaraame (<strong>Gantt Chart</strong>) ja ülesannete vahelisi seoseid (<strong>Network Diagram</strong>), samuti jälgida ressursside tabelit.
+            Graafikute ja diagrammide loomiseks, nagu Excelis, tuleb andmed eksportida.
+        </p>
+
+    </div>
 </main>
 
 <footer>
