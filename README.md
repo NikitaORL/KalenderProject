@@ -96,6 +96,38 @@ Menüü nupud:
 
 ---
 
+## Ülesanded
+
+- [x] Veebilehe struktuur loodud
+- [x] Kalenderi juhend lisatud
+- [x] Valemite juhend lisatud
+- [x] Diagrammide juhend lisatud
+- [x] Kujundus valmis
+- [ ] Täiendused (vajadusel)
+
+---
+
+## Märkused
+
+> [!NOTE]
+> See projekt on loodud õppimise eesmärgil.
+
+> [!TIP]
+> Diagrammid aitavad paremini analüüsida projekti andmeid.
+
+> [!WARNING]
+> Vale valem võib anda ebatäpseid tulemusi.
+
+---
+
+## Viited
+
+Microsoft Project on professionaalne projektijuhtimise tarkvara[^1].
+
+[^1]: Kasutatakse projektide planeerimiseks ja ressursside haldamiseks
+
+---
+
 ## Autor
 
 **Nikita Orlenko**  
