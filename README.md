@@ -109,6 +109,37 @@ Aktiivne leht on menüüs esile tõstetud tumedama taustavärviga.
 
 ---
 
+## Ülesanded
+
+- [x] Veebilehe struktuur loodud
+- [x] Kalenderi juhend lisatud
+- [x] Diagrammide juhend lisatud
+- [x] Kujundus valmis
+- [ ] Täiendused (vajadusel)
+
+---
+
+## Märkused
+
+> [!NOTE]
+> See projekt on loodud õppimise eesmärgil.
+
+> [!TIP]
+> Gantt diagramm aitab paremini visualiseerida projekti ajakava.
+
+> [!WARNING]
+> Vale kalender võib mõjutada kogu projekti planeerimist.
+
+---
+
+## Viited
+
+ProjectLibre on tasuta tarkvara[^1].
+
+[^1]: Alternatiiv Microsoft Projectile
+
+---
+
 ## Autor
 
 **Nikita Orlenko**  
