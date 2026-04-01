@@ -1,104 +1,102 @@
-# Microsoft Project – Руководство пользователя
+# Microsoft Project – Kasutaja juhend
 
-## Содержание
+## Sisukord
 
-1. [О проекте](#о-проекте)
-2. [Функциональность](#функциональность)
-3. [Дизайн и вёрстка](#дизайн-и-вёрстка)
-4. [Скриншоты](#скриншоты)
-5. [Используемые технологии](#используемые-технологии)
-6. [Навигация](#навигация)
-7. [Автор](#автор)
-
----
-
-## О проекте
-
-Данный проект представляет собой веб-сайт с пошаговыми инструкциями по работе с Microsoft Project.  
-Цель проекта – предоставить пользователю наглядные материалы по трём ключевым функциям программы в удобном и эстетически оформленном формате.
-
-В отличие от стандартной текстовой документации, здесь каждый шаг сопровождается скриншотом и чёткой структурой изложения.
+1. [Projektist](#projektist)
+2. [Funktsionaalsus](#funktsionaalsus)
+3. [Disain ja paigutus](#disain-ja-paigutus)
+4. [Ekraanipildid](#ekraanipildid)
+5. [Kasutatud tehnoloogiad](#kasutatud-tehnoloogiad)
+6. [Navigatsioon](#navigatsioon)
+7. [Autor](#autor)
 
 ---
 
-## Функциональность
+## Projektist
 
-Проект состоит из трёх самостоятельных страниц, каждая из которых посвящена отдельной теме:
+Käesolev projekt on veebisait, mis sisaldab samm-sammulisi juhiseid Microsoft Projecti kasutamiseks.  
+Projekti eesmärk on pakkuda kasutajale visuaalseid materjale programmi kolme põhifunktsiooni kohta mugavas ja esteetiliselt kujundatud vormingus.
 
-### 1. Календарь (`index.html`)
-- Создание нового рабочего календаря
-- Настройка рабочих дней и часов
-- Добавление исключений (праздничные и сокращённые дни)
-- Применение календаря к задачам проекта
-
-### 2. Формулы (`formula.html`)
-- Открытие раздела Custom Fields
-- Создание пользовательского поля
-- Ввод формулы (например, `Work * 2`)
-- Добавление нового столбца в таблицу
-- Просмотр результата вычислений
-
-### 3. Диаграммы (`diagram.html`)
-- Выбор данных для визуализации
-- Активация таблицы Cost
-- Создание отчёта через Report → Dashboard
-- Построение диаграммы Cost Overview
+Erinevalt tavalisest tekstipõhisest dokumentatsioonist on siin iga samm varustatud ekraanipildiga ja selge ülesehitusega.
 
 ---
 
-## Дизайн и вёрстка
+## Funktsionaalsus
 
-Визуальное оформление разработано с акцентом на чистоту и удобство чтения:
+Projekt koosneb kolmest iseseisvast lehest, millest igaüks on pühendatud eraldi teemale:
 
-| Элемент | Описание |
-|---------|---------|
-| **Шапка сайта** | Градиентный фон от насыщенного синего к тёмно-синему, крупный заголовок и подзаголовок |
-| **Навигационное меню** | Три кнопки с плавным изменением цвета при наведении курсора |
-| **Контентная область** | Белый фон, скруглённые углы, тень для визуального отделения от фона |
-| **Изображения** | Все скриншоты имеют тень, скруглённые углы и тонкую рамку |
-| **Подвал** | Тёмный фон, информация об авторе, прижат к нижней части страницы |
-| **Адаптивность** | Корректное отображение на экранах различного размера (десктопы, планшеты, мобильные устройства) |
+### 1. Kalender (`index.html`)
+- Uue töökalendri loomine
+- Tööpäevade ja -tundide seadistamine
+- Erandite lisamine (pühad ja lühendatud päevad)
+- Kalendri rakendamine projekti ülesannetele
 
----
+### 2. Valemid (`formula.html`)
+- Custom Fields sektsiooni avamine
+- Kasutajavälja loomine
+- Valemi sisestamine (näiteks `Work * 2`)
+- Uue veeru lisamine tabelisse
+- Arvutustulemuse kuvamine
 
-## Скриншоты
-
-Ниже представлены примеры оформления страниц:
-
-| Страница | Изображение |
-|----------|-------------|
-| Календарь  <img width="1920" height="945" alt="{EA85F339-A4A0-4D3D-99EC-74C7D20CBB74}" src="https://github.com/user-attachments/assets/24a5efed-01f9-4ce5-9613-fd255025e793" /> 
-| Формулы  <img width="1852" height="940" alt="{A1900B73-14A8-48D3-827B-5986C322AB12}" src="https://github.com/user-attachments/assets/043a31a7-4cbc-475b-88db-5901ee501011" />
-| Диаграммы   <img width="1920" height="924" alt="{E06F577A-99FB-4D08-B73C-6BAE1E9DE232}" src="https://github.com/user-attachments/assets/ea8af2a3-ae1d-40d2-85f8-1d9b4a8d547b" />
-
-
-*В проекте используется 14 скриншотов интерфейса Microsoft Project, каждый соответствует определённому шагу инструкции.*
+### 3. Diagrammid (`diagram.html`)
+- Andmete valimine visualiseerimiseks
+- Cost tabeli aktiveerimine
+- Aruande loomine kaudu Report → Dashboard
+- Cost Overview diagrammi koostamine
 
 ---
 
-## Используемые технологии
+## Disain ja paigutus
 
-- **HTML5** – создание структуры веб-страниц
-- **CSS3** – стилизация, градиенты, тени, анимации переходов
-- **Flexbox** – построение гибких макетов
-- **Media Queries** – реализация адаптивного дизайна
-- **PNG** – формат всех графических материалов
+Visuaalne kujundus on loodud rõhuasetusega puhtusele ja loetavusele:
 
----
-
-## Навигация
-
-Перемещение между страницами осуществляется с помощью навигационного меню, расположенного в верхней части каждой страницы.  
-Кнопки меню:
-
-- **Kalender** – переход к инструкции по созданию календаря
-- **Formula** – переход к инструкции по созданию формул
-- **Diagrammid** – переход к инструкции по созданию диаграмм
+| Element | Kirjeldus |
+|---------|----------|
+| **Päis** | Gradienttaust küllastunud sinisest tumesiniseni, suur pealkiri ja alapealkiri |
+| **Navigatsioonimenüü** | Kolm nuppu sujuva värvi muutumisega hiire kohal viibimisel |
+| **Sisuala** | Valge taust, ümarad nurgad, vari visuaalseks eraldamiseks taustast |
+| **Pildid** | Kõigil ekraanipiltidel on vari, ümarad nurgad ja peenike raam |
+| **Jalus** | Tume taust, teave autori kohta, kinnitatud lehe alumisse ossa |
+| **Kohanduvus** | Korrektne kuvamine erineva suurusega ekraanidel (lauaarvutid, tahvelarvutid, mobiilseadmed) |
 
 ---
 
+## Ekraanipildid
 
-## Автор
+Allpool on toodud näited lehtede kujundusest:
 
-**Никита Орленко**  
-2026 год
+| Leht | Pilt |
+|------|------|
+| Kalender | <img width="1920" height="945" alt="{EA85F339-A4A0-4D3D-99EC-74C7D20CBB74}" src="https://github.com/user-attachments/assets/24a5efed-01f9-4ce5-9613-fd255025e793" /> |
+| Valemid | <img width="1852" height="940" alt="{A1900B73-14A8-48D3-827B-5986C322AB12}" src="https://github.com/user-attachments/assets/043a31a7-4cbc-475b-88db-5901ee501011" /> |
+| Diagrammid | <img width="1920" height="924" alt="{E06F577A-99FB-4D08-B73C-6BAE1E9DE232}" src="https://github.com/user-attachments/assets/ea8af2a3-ae1d-40d2-85f8-1d9b4a8d547b" /> |
+
+*Projektis kasutatakse 14 Microsoft Projecti liidese ekraanipilti, millest igaüks vastab konkreetsele juhiste sammule.*
+
+---
+
+## Kasutatud tehnoloogiad
+
+- **HTML5** – veebilehtede struktuuri loomine
+- **CSS3** – kujundus, gradientide varjundid, üleminekuefektid
+- **Flexbox** – paindlike paigutuste loomine
+- **Media Queries** – kohanduva disaini rakendamine
+- **PNG** – kõigi graafiliste materjalide vorming
+
+---
+
+## Navigatsioon
+
+Lehtede vahel liikumine toimub navigatsioonimenüü abil, mis asub iga lehe ülaosas.  
+Menüü nupud:
+
+- **Kalender** – üleminek kalendri loomise juhendile
+- **Formula** – üleminek valemite loomise juhendile
+- **Diagrammid** – üleminek diagrammide loomise juhendile
+
+---
+
+## Autor
+
+**Nikita Orlenko**  
+2026. aasta
